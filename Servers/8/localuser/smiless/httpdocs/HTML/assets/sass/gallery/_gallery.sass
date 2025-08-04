@@ -1,0 +1,170 @@
+.SmilGallerySection
+    background: $white-color
+    padding-bottom: 120px
+    @include respond-to(screen-991)
+        padding-bottom: 60px
+    @include respond-to(screen-675)
+        padding-bottom: 30px
+    .heading
+        margin: 50px 0
+        @include respond-to(screen-675)
+            margin-bottom: 15px
+            margin-top: 30px
+        h2
+            span
+                color: $primary-color
+    .slideInUp 
+        animation-duration: 700ms
+    .tab
+        text-align: center
+        margin-bottom: 50px
+        @include respond-to(screen-675)
+            margin-bottom: 20px
+        li
+            display: inline-block
+            font-size: 20px
+            font-family: $Poppins
+            color: $black-color
+            position: relative
+            padding: 0 15px
+            font-weight: 500
+            cursor: pointer
+            @include respond-to(screen-675)
+                font-size: 16px
+            &:before
+                content: ""
+                width: 4px
+                height: 4px
+                background: $black-color
+                border-radius: 10px
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+            &:last-child
+                &:before
+                    display: none
+            &.current
+                color: $primary-color
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            padding: 10px
+            @include respond-to(screen-767)
+                flex: 0 1 50%
+                max-width: 50%
+                padding: 5px
+    .gallery_grid
+        a[data-fancybox]
+            display: block
+            line-height: 0
+            position: relative
+            &:hover
+                .title
+                    top: 0
+                    p
+                        opacity: 0
+                    .icon
+                        opacity: 1
+                        transition: 900ms ease
+        .img
+            line-height: 0
+            img
+                width: 100%
+        .title
+            display: block
+            line-height: normal
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            top: 85%
+            text-align: center
+            padding: 9px 0
+            transition: top 400ms ease
+            display: flex
+            align-items: center
+            justify-content: center
+            user-select: none
+            pointer-events: none
+            &:before
+                content: ""
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                background: $primary-color
+                opacity: .9
+            p
+                font-size: 18px
+                color: $white-color
+                position: relative
+                opacity: 1
+                transition: 100ms ease
+                @include respond-to(screen-675)
+                    font-size: 14px
+            .icon
+                display: block;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                z-index: 1;
+                position: absolute;
+                border-radius: 50px;
+                display: flex
+                align-items: center
+                justify-content: center
+                opacity: 0
+                transition: 200ms ease
+                &:before
+                    content: ""
+                    position: absolute
+                    background: #000
+                    width: 20px;
+                    height: 2px
+                &:after
+                    content: ""
+                    position: absolute
+                    background: #000
+                    width: 2px;
+                    height: 20px
+        .item
+            overflow: hidden
+            height: 100%
+            line-height: 0
+            position: relative
+            .video_icon
+                position: absolute
+                width: 62px
+                z-index: 11
+                height: 62px
+                box-shadow: 5px 6px 9px #c1c1c187
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                @include respond-to(screen-675)
+                    width: 45px
+                    height: 45px
+                &:before
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    top: 5px;
+                    border: 1px solid #666;
+                    border-radius: 80px;
+                    opacity: .4;
+                    @include respond-to(screen-675)
+                        left: 3px
+                        right: 3px
+                        top: 3px
+                        bottom: 3px
+                .icon
+                    img
+            video
+                width: 100%
+                height: 100%
+                transform: scale(1.55)

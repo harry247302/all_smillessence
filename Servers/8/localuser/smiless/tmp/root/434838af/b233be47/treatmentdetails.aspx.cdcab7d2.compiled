@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/TreatmentDetails.aspx" hash="fffffff58282e8ca" filehash="22e3b4b062856a30" flags="110000" assembly="App_Web_l2sdbsvr" type="ASP.treatmentdetails_aspx">
+    <filedeps>
+        <filedep name="/SmilesSenceMaster.Master" />
+        <filedep name="/TreatmentDetails.aspx" />
+    </filedeps>
+</preserve>

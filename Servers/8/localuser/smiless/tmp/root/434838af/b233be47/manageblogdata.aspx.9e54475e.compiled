@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SmilessenceAdmin/ManageBlogData.aspx" hash="fffffff58282e8ca" filehash="d95fdb5bbd224c5b" flags="110000" assembly="App_Web_mbb2tm1h" type="ASP.smilessenceadmin_manageblogdata_aspx">
+    <filedeps>
+        <filedep name="/SmilessenceAdmin/Footer.ascx" />
+        <filedep name="/SmilessenceAdmin/Header.ascx" />
+        <filedep name="/SmilessenceAdmin/HeaderRight.ascx" />
+        <filedep name="/SmilessenceAdmin/ManageBlogData.aspx" />
+    </filedeps>
+</preserve>

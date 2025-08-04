@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Index.aspx" hash="fffffff58282e8ca" filehash="b94b8d2d37992bc4" flags="110000" assembly="App_Web_orwvqbm1" type="ASP.index_aspx">
+    <filedeps>
+        <filedep name="/Index.aspx" />
+        <filedep name="/SmilesSenceMaster.Master" />
+    </filedeps>
+</preserve>

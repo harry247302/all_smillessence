@@ -1,0 +1,46 @@
+.modelPop
+    &.Model_appointment
+        max-width: 992px
+        width: 100%
+        margin: 0 auto
+        top: 100%
+        left: 50%
+        transform: translate(-50%, 100%)
+        padding: 15px
+        right: auto
+        bottom: auto
+        transition: 700ms ease
+        .close
+            display: none
+        &.model_active
+            top: 50%
+            transform: translate(-50%,-50%) !important
+            &~.overlay
+                background: $white-color
+                opacity: 1
+        .ContactForm
+            padding: 0
+            background: transparent
+            .container
+                @include respond-to(screen-675)
+                    padding: 0
+            label
+                @include respond-to(screen-675)
+                    margin-bottom: 3px
+            .flex
+                .col
+                    &:first-child
+                        img
+                            @include respond-to(screen-675)
+                                display: none !important
+                    .content 
+                        .text
+                            display: none
+                        h1
+                            line-height: 46px
+                            margin-bottom: 20px
+            .form 
+                .col1,.col2
+                    @include respond-to(screen-675)
+                        padding-bottom: 5px
+                        padding-top: 5px

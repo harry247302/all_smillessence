@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SomethingWentWrong.aspx" hash="fffffff58282e8ca" filehash="2269820bd952bbe7" flags="110000" assembly="App_Web_orwvqbm1" type="ASP.somethingwentwrong_aspx">
+    <filedeps>
+        <filedep name="/SmilesSenceMaster.Master" />
+        <filedep name="/SomethingWentWrong.aspx" />
+    </filedeps>
+</preserve>

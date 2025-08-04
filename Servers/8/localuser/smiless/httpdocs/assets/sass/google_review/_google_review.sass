@@ -1,0 +1,160 @@
+.smil_goorevei
+    position: fixed
+    z-index: 9
+    bottom: 20px
+    background: #fff
+    border-radius: 5px
+    left: 30px
+    width: 305px
+    cursor: pointer
+    border: 1px solid #eee
+    padding: 8px 12px
+    opacity: 1
+    pointer-events: all
+    transition: 450ms ease
+    transform: translateY(0%)
+    @include respond-to(screen-675)
+        bottom: 45px
+        left: 0
+    &.fixed 
+        transform: translateY(100%)
+        opacity: 0
+
+    .flex
+        @include respond-to(screen-675)
+            align-items: center
+    .icon
+        margin-right: 8px
+        width: 24px
+        img
+    .content
+        flex: 1
+        h5
+            font-size: 13px
+            margin-bottom: 0px
+            font-weight: 600
+            color: #333
+        small
+            font-size: 12px;
+            display: block;
+            line-height: 1.2;
+            color: #878787;
+            margin: 2px 0px;
+            font-weight: 400;
+            margin-bottom: 6px;
+            @include respond-to(screen-675)
+                display: none
+        b
+            display: flex;
+            align-items: center;
+            color: $primary-color;
+            font-size: 20px;
+            line-height: 1;
+            span
+            img
+                width: 13px;
+                margin: 0px 1px;
+
+.model
+    &.Model_review
+        background: $white-color
+        padding: 35px
+        position: fixed
+        top: 0
+        left: auto
+        right: 0
+        bottom: 0
+        max-width: 450px
+        width: 100%
+        display: block
+        height: 100%
+        background-image: linear-gradient(#fff, #fff)
+        z-index: 9
+        transition: all 1s ease
+        // transition-delay: 0.7s
+        opacity: 0
+        visibility: hidden
+        padding: 30px
+        z-index: 1111
+        padding-top: 25px
+        transform: translateX(100%)
+        &.model_active
+            transform: translateX(0%)
+            opacity: 1
+            visibility: visible
+        .modelrevew
+            .rev_head
+                padding-bottom: 15px
+                .span
+                    h4
+                        font-size: 34px;
+                        font-weight: 400;
+                        color: #e31a34;
+                        text-transform: uppercase;
+                    small
+                        display: block;
+                        font-size: 17px;
+                        margin-top: 4px;
+                        font-weight: 300;
+                        margin-bottom: 8px;
+                p
+                    span
+                        img
+
+            .cust_reve_model 
+                padding: 15px 0;
+                height: 80vh;
+                overflow-y: scroll;
+                &::-webkit-scrollbar
+                    width: 4px
+                &::-webkit-scrollbar-track
+                    box-shadow: unset    
+                    background: #eee
+                &::-webkit-scrollbar-thumb 
+                    background-color: #888
+                .revem_cusd 
+                    padding-right: 20px
+                    .item
+                        padding: 10px 0;
+                        position: relative
+                        a
+                            position: absolute
+                            left: 0
+                            right: 0
+                            top: 0
+                            bottom: 0
+                            z-index: 11
+                        .icon 
+                            flex: 0 1 40px
+                            max-width: 40px
+                        .content 
+                            flex: 1
+                            padding-left: 15px
+                            .stars 
+                                img 
+                                    width: 13px
+                            p 
+                                font-size: 13px
+                                text-align: left
+                                line-height: 19px
+                                margin-top: 6px
+                    
+.FxdSwnVrMn 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ededed;
+    padding: 10px 20px;
+    text-align: right;
+    p
+        margin: 0
+        a
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 0px;
+            img
+                display: inline-block
+                vertical-align: middle
+                    

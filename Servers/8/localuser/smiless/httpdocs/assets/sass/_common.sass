@@ -1,0 +1,404 @@
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    list-style: none
+    box-sizing: border-box
+
+body,html
+    font-family: $Roboto
+    font-size: 15px
+    line-height: 22px
+    font-weight: 500
+    color: $black-color
+    position: static !important
+
+a[href]
+    text-decoration: none
+
+img
+    max-width: 100%
+.container
+    max-width: 1075px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+h1,h2,h3,h4,h5,h6
+    font-family: $Poppins
+.heading
+    h2
+        font-size: 45px
+        line-height: 60px
+        font-family: $Century
+        color: #232323
+        margin-bottom: 10px
+        @include respond-to(screen-991)
+            font-size: 35px
+            line-height: 45px
+        @include respond-to(screen-675)
+            font-size: 28px
+            line-height: 38px
+        @include respond-to(screen-520)
+            font-size: 25px
+            line-height: 28px
+    p
+        font-size: 16px
+        line-height: 22px
+        font-family: $Roboto
+        font-weight: 300
+        @include respond-to(screen-675)
+            font-size: 14px
+            line-height: 21px
+input,select,button,textarea
+    font-family: $Roboto
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    text-indent: 1px
+    text-overflow: ''
+button
+    cursor: pointer
+
+.flex
+    display: flex
+    flex-wrap: wrap
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(transY)
+    0% 
+        transform: translateY(0px)
+    20%
+        transform: translateY(30px)
+    
+    100% 
+        transform: translateY(0)
+        
++keyframes(slideInUp)  
+    0% 
+        opacity: 0
+        -webkit-transform: translate3d(0, 50%, 0)
+        -ms-transform: translate3d(0, 50%, 0)
+        transform: translate3d(0, 50%, 0)
+    
+    100% 
+        opacity: 1
+        -webkit-transform: none
+        -ms-transform: none
+        transform: none
+.slideInUp 
+    -webkit-animation-name: slideInUp
+    animation-name: slideInUp
+
+.owl-carousel
+    .owl-nav
+        button
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            @include respond-to(screen-675)
+                width: 8px
+            &.disabled
+                pointer-events: none
+                opacity: .5
+            &.owl-prev
+                left: 0
+            &.owl-next
+                right: 0
+            svg
+                display: block
+                width: 30px
+                height: 30px
+                color: $black-color
+
+div#back-to-top
+    position: fixed
+    left: auto
+    right: -100px
+    width: 45px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 55px
+    z-index: 11
+    bottom: 10px
+    background: $primary-color
+    padding: 10px
+    cursor: pointer
+    transition: 700ms ease
+    @include respond-to(screen-675)
+        width: 45px
+        height: 45px
+        bottom: 50px
+    &.show
+        right: 10px
+    svg
+        color: #fff
+        max-width: 15px
+
+.overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 111
+    background: $black-color
+    height: 100%
+    opacity: 0
+    pointer-events: none
+    transition: height 700ms ease 
+    overflow: hidden
+
+.owl-dots 
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4%;
+    button.owl-dot
+        width: 7px
+        height: 7px
+        border-radius: 20px
+        background: $black-color
+        margin: 0 5px
+        opacity: .53
+.owl-dots
+    button.owl-dot
+        opacity: 1
+        width: 16px
+        height: 16px
+        background: transparent
+        border: 1px solid $black-color
+        position: relative
+        border-color: transparent
+        margin: 0 1px
+        span
+            position: absolute
+            width: 6px
+            height: 6px
+            background: $black-color
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            border-radius: 50px
+        &.active
+            border-color: $black-color
+
+.only_mob
+    display: none !important
+    @include respond-to(screen-767)
+        display: block !important
+        
+// Social links
+.social_links
+    ul
+        li
+            display: inline-block
+            a
+                display: block
+                width: 30px
+                line-height: 0
+                text-align: center
+                margin: 0 2px
+                svg
+                    width: 21px
+                    height: 21px
+                    display: inline-block
+                    path
+                        fill: #fff
+                        transition: 600ms ease
+                &:hover
+                    svg
+                        path
+                            fill: $primary-color
+
+
+
+// Enquiry Form
+.form
+    .formgroup
+        position: relative
+        margin-bottom: 20px
+        .form-control
+            max-width: 520px
+            width: 100%
+            height: 45px
+            border: 0
+            font-size: 16px
+            font-weight: 400
+            top: 16px
+            font-family: $Roboto
+            padding-top: 15px
+            border-bottom: 1px solid #000
+            &:focus
+                outline: none
+                &~label
+                    top: -5px
+            &.valid
+                outline: none
+                &~label
+                    top: -5px
+                    font-size: 14px
+                    opacity: .8
+        textarea.form-control
+            height: 120px
+
+        label
+            position: absolute
+            left: 0
+            right: 0
+            font-size: 16px
+            pointer-events: none
+            line-height: normal
+            transition: 600ms ease
+            display: block
+            color: #000
+            font-weight: 400
+            top: 8px
+            padding: 0 0 13px
+    .form-btn
+        .btn
+            input,a
+                display: inline-block
+                background: transparent
+                font-size: 16px;
+                font-weight: 600;
+                color: #ed145b;
+                border: 0
+                cursor: pointer
+                text-transform: uppercase
+                &:focus
+                    outline: none
+            img
+                display: inline-block  
+                margin-left: 5px     
+                
+.text-center
+    text-align: center
+.modelPop
+    &.model_active
+        transform: translate(0) !important
+        opacity: 1 !important
+        pointer-events: all !important
+        &~.overlay
+            opacity: .5
+            pointer-events: all
+    .close
+        position: absolute
+        top: 15px
+        right: 15px
+        z-index: 11
+        cursor: pointer
+.overlay
+    .close
+        position: absolute
+        top: 15px
+        right: 15px
+        z-index: 11
+        cursor: pointer
+.model.modelPop
+    position: fixed
+    z-index: 1111
+    @include respond-to(screen-991)
+        display: flex
+        align-items: center
+    .modelBody
+        width: 100%
+        height: 100%
+        @include respond-to(screen-991)
+            height: 80%
+    &.Model_Video
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background: #000
+        transform: translateY(-100%)
+        iframe
+            width: 100%
+            height: 100%
+            border: 0
+            outline: none
+        &.model_active
+            transition: 600ms ease
+            &~.overlay
+                display: none
+
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+
+.video_icon
+    width: 72px
+    height: 72px
+    border: 2px solid $white-color
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 100px
+    cursor: pointer
+    background: $white-color
+    img
+        width: auto
+
+.dot-list
+    margin-bottom: 20px
+    li
+        position: relative
+        padding-left: 15px
+        font-size: 16px
+        line-height: 24px
+        &:before
+            content: ""
+            position: absolute
+            left: 0
+            width: 6px
+            top: 7px
+            height: 6px
+            background: $primary-color
+            border-radius: 20px
+
+
+.date
+    font-size: 18px
+    font-weight: 500
+    color: $primary-color
+    margin-bottom: 5px
+    transition: 400ms ease
+.stiky 
+    position: sticky
+    top: 100px
+
+
+.customscroll
+    position: relative
+    &::-webkit-scrollbar
+        width: 5px
+    &::-webkit-scrollbar-track
+        box-shadow: unset    
+        background: transparent
+    &::-webkit-scrollbar-thumb 
+        background-color: $white-color

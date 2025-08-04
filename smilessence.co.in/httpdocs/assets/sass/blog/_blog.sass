@@ -1,0 +1,175 @@
+.blog-page
+    .InnerBanner
+        .banner-content
+            bottom: auto
+            top: 50%
+            transform: translateY(-50%)
+            @include respond-to(screen-767)
+                bottom: 15px
+                top: auto
+                transform: none
+            .container
+                max-width: 745px
+            .content
+                h1
+                    color: #2d2d2d
+                    text-align: center
+                    span
+                        color: $primary-color
+.BlogListing
+    background: #f0f0f0
+    padding: 85px 0
+    @include respond-to(screen-991)
+        padding: 20px 0 40px
+    .col
+        flex: 0 1 33.33%
+        max-width: 33.33%
+        padding: 15px
+        @include respond-to(screen-767)
+            flex: 0 1 50%
+            max-width: 50%
+            padding: 8px
+        @include respond-to(screen-675)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 8px 0
+
+    .item
+        box-shadow: 0 10px 10px 2px #0000000d
+        height: 100%
+        background: $white-color
+        a
+            display: block
+        .img
+            line-height: 0
+            overflow: hidden
+            img
+                width: 100%
+                transform: scale(1)
+                transition: 1s ease
+        .text
+            padding: 25px 15px
+            background: $white-color
+            // transition: 400ms ease
+            .date
+                
+            .title
+                font-size: 17px;
+                line-height: 23px;
+                color: #232323
+                font-family: $Century
+                transition: 400ms ease
+                @include respond-to(screen-991)
+                    font-size: 18px
+                    line-height: 22px
+
+        &:hover
+            .img
+                img
+                    transform: scale(1.1)
+            .text
+                background: $primary-color
+                .date,.title
+                    color: $white-color
+                    animation: slideInUp 700ms ease
+                .date
+                    animation-duration: 1s
+                .title
+                    animation-duration: 1.5s
+.blog-page
+    .smileOralhealthbyte
+        background: #f0f0f0
+        padding-bottom: 60px
+        @include respond-to(screen-767)
+            padding-bottom: 30px
+        .heading
+            h2
+                span
+                    color: $primary-color
+
+
+// Blog Detail
+.blog-detail
+    background: #f0f0f0
+    padding: 85px 0
+    @include respond-to(screen-991)
+        padding: 20px 0 50px
+    img
+        float: left
+        shape-outside: url(../images/blog/detail.jpg)
+        shape-margin: 30px
+        padding: 0 0
+        padding-left: 0
+        padding-right: 30px
+        max-width: 460px
+        width: 100%
+        @include respond-to(screen-767)
+            float: none
+            max-width: 100%
+            padding: 0
+    .title
+        font-size: 26px;
+        line-height: 30px;
+        color: #232323;
+        font-family: "Century Gothic",sans-serif;
+        transition: 400ms ease;
+        margin-bottom: 16px;
+        @include respond-to(screen-991)
+            font-size: 20px
+            line-height: 22px
+            margin-bottom: 15px
+        @include respond-to(screen-767)
+            font-size: 25px
+            line-height: 25px
+    h2
+        margin-bottom: 15px
+    h4,h3
+        font-size: 20px
+        font-weight: 600
+        color: $primary-color
+        font-family: $Roboto
+        @include respond-to(screen-991)
+            font-size: 18px
+    p
+        font-family: $Roboto
+        font-size: 18px
+        line-height: 25px
+        font-weight: 300
+        margin: 15px 0 15px
+        text-align: justify
+        @include respond-to(screen-991)
+            font-size: 16px
+            line-height: 22px
+            margin: 10px 0 15px 0
+    ul
+        margin: 25px 0
+        li
+            font-family: $Roboto
+            position: relative
+            font-size: 18px
+            line-height: 25px
+            font-weight: 300
+            margin: 10px 0 0
+            text-align: justify
+            padding-left: 15px
+            &:before
+                content: ""
+                width: 6px
+                height: 6px
+                background: $primary-color
+                border-radius: 50px
+                position: absolute
+                top: 8px
+                left: 0
+    .backto
+        display: inline-block
+        padding: 3px 28px
+        border: 1px solid rgba(0,0,0,.5)
+        border-radius: 22px
+        margin-top: 40px
+        color: #000
+        transition: 400ms ease
+        &:hover
+            color: $white-color
+            background: $primary-color
+            border-color: $primary-color

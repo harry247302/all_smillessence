@@ -1,0 +1,242 @@
+.ServiceGrid
+    padding: 45px 0
+    @include respond-to(screen-675)
+        padding: 20px 0
+    .flex
+        .col
+            flex: 0 0 33.33%
+            max-width: 33.33%
+            padding: 10px
+            @include respond-to(screen-675)
+                flex: 0 1 50%
+                max-width: 50%
+                padding: 5px
+    .item
+        position: relative
+        .img
+            line-height: 0
+            position: relative
+            overflow: hidden
+            &:before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                top: 0
+                z-index: 11
+                background: linear-gradient(0deg, black, transparent,transparent)
+            img
+                transform: scale(1)
+                transition: 1s ease
+        p
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            padding: 20px
+            color: $white-color
+            z-index: 11
+            font-size: 18px
+            @include respond-to(screen-400)
+                font-size: 16px
+                padding: 15px
+        a
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 111
+        &:hover
+            .img
+                img
+                    transform: scale(1.2)
+    .headingmain
+        margin-bottom: 15px
+        text-align: center
+        h1
+            font-weight: 400
+            font-size: 30px
+            line-height: 60px
+            font-family: "Century Gothic", sans-serif
+            margin-bottom: 10px
+            @include respond-to(screen-675)
+                font-size: 26px
+                line-height: 30px
+            span
+                color: $primary-color
+                @include respond-to(screen-675)
+                    display: block
+        p
+            color: #000
+            font-family: "Roboto", sans-serif
+            font-size: 18px
+            font-weight: 300
+            line-height: 22px
+            @include respond-to(screen-675)
+                font-size: 18px
+                margin-top: 8px
+            span
+                display: inline-block
+                font-weight: 500
+
+
+
+
+.cd-image-container 
+    position: relative
+    width: 90%
+    max-width: 768px
+    margin: 0em auto
+    img 
+        display: block
+    .cd-image-label 
+        position: absolute
+        bottom: 0
+        right: 0
+        color: #ffffff
+        padding: 1em
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        opacity: 0
+        transform: translateY(20px)
+        transition: transform 0.3s 0.7s, opacity 0.3s 0.7s
+        &.is-hidden 
+            visibility: hidden
+.is-visible 
+    .cd-image-label 
+        opacity: 1
+        transform: translateY(0)
+
+.cd-resize-img 
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 100%
+  overflow: hidden
+  transform: translateZ(0)
+  backface-visibility: hidden
+  border-right: 2px solid $white-color
+  img 
+    position: absolute
+    left: 0
+    top: 0
+    display: block
+    height: 100%
+    width: auto
+    max-width: none
+    .cd-image-label 
+        right: auto
+        left: 0
+.is-visible 
+    .cd-resize-img 
+        width: 50%
+  
+.cd-handle 
+  position: absolute
+  height: 44px
+  width: 44px
+  left: 50%
+  top: 50%
+  margin-left: -22px
+  margin-top: -22px
+  border-radius: 50%
+  background: #fff url("../images/imgfilaleft.png") no-repeat -10px -8px
+  cursor: move
+  opacity: 0
+  transform: translate3d(0, 0, 0) scale(0)
+  box-shadow: 1px 1px 10px 1px #5252527d
+
+.cd-handle.draggable 
+//   background-color: #445b7c
+
+.is-visible .cd-handle 
+  opacity: 1
+  transform: translate3d(0, 0, 0) scale(1)
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s
+
+.SmileCusoCareepati
+    background: $white-color
+    padding: 30px 0 70px
+    @include respond-to(screen-675)
+        padding-bottom: 30px
+    .heading
+        margin-bottom: 35px
+        @include respond-to(screen-675)
+            margin-bottom: 30px
+        h2
+            @include respond-to(screen-675)
+                font-size: 26px
+                line-height: 30px
+            span
+                color: $primary-color
+                @include respond-to(screen-675)
+                    display: block
+        p
+            font-weight: 400
+            font-size: 25px
+            @include respond-to(screen-675)
+                font-size: 18px
+                margin-top: 8px
+            span
+                display: inline-block
+                font-weight: 500
+    a
+        display: inline-block
+        padding: 2px 25px
+        margin-top: 45px
+        color: #000
+        border: 2px solid #333
+        border-radius: 40px
+        letter-spacing: 2px
+
+.SmiloralTips
+    background: url('../images/services/img5.jpg')
+    padding: 110px 0
+    background-attachment: fixed;
+    background-size: cover;
+    @include respond-to(screen-675)
+        padding: 190px 0 0;
+        background-size: contain;
+        background-repeat: no-repeat
+    .heading
+        margin-bottom: 35px
+        @include respond-to(screen-675)
+            margin-bottom: 20px
+        h2
+            span
+                color: $primary-color
+    .container
+        text-align: center
+        max-width: 438px
+        background: $white-color
+        padding: 48px 50px
+        @include respond-to(screen-675)
+            padding: 25px
+    .OralSlider
+        .owl-dots
+            position: static
+            margin: 30px
+            @include respond-to(screen-675)
+                margin: 20px 0
+    .item
+        p
+            color: $black-color
+            font-family: $Roboto
+            font-size: 18px
+            font-weight: 300
+    a
+        display: inline-block;
+        padding: 2px 25px;
+        color: #000;
+        border: 2px solid #999
+        border-radius: 40px;
+        letter-spacing: 1px;
+        font-size: 16px
+        transition: 400ms ease
+        &:hover
+            background: $primary-color
+            border-color: $primary-color
+            color: $white-color

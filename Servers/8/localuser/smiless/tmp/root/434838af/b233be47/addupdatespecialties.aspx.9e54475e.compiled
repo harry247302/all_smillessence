@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SmilessenceAdmin/AddUpdateSpecialties.aspx" hash="fffffff58282e8ca" filehash="bb753232cbc3746d" flags="110000" assembly="App_Web_v12tda1w" type="ASP.smilessenceadmin_addupdatespecialties_aspx">
+    <filedeps>
+        <filedep name="/SmilessenceAdmin/AddUpdateSpecialties.aspx" />
+        <filedep name="/SmilessenceAdmin/Footer.ascx" />
+        <filedep name="/SmilessenceAdmin/Header.ascx" />
+        <filedep name="/SmilessenceAdmin/HeaderRight.ascx" />
+    </filedeps>
+</preserve>

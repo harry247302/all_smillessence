@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SmilessenceAdmin/AddUpdBlogCategory.aspx" hash="fffffff58282e8ca" filehash="b1c8fbc5d6b0b627" flags="110000" assembly="App_Web_mbb2tm1h" type="ASP.smilessenceadmin_addupdblogcategory_aspx">
+    <filedeps>
+        <filedep name="/SmilessenceAdmin/AddUpdBlogCategory.aspx" />
+        <filedep name="/SmilessenceAdmin/Footer.ascx" />
+        <filedep name="/SmilessenceAdmin/Header.ascx" />
+        <filedep name="/SmilessenceAdmin/HeaderRight.ascx" />
+    </filedeps>
+</preserve>

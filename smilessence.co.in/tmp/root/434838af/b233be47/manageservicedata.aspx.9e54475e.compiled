@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SmilessenceAdmin/ManageServiceData.aspx" hash="fffffff58282e8ca" filehash="26a033b6718036cc" flags="110000" assembly="App_Web_mbb2tm1h" type="ASP.smilessenceadmin_manageservicedata_aspx">
+    <filedeps>
+        <filedep name="/SmilessenceAdmin/Footer.ascx" />
+        <filedep name="/SmilessenceAdmin/Header.ascx" />
+        <filedep name="/SmilessenceAdmin/HeaderRight.ascx" />
+        <filedep name="/SmilessenceAdmin/ManageServiceData.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/BlogListings.aspx" hash="fffffff58282e8ca" filehash="9bdf01a13e373a67" flags="110000" assembly="App_Web_l2sdbsvr" type="ASP.bloglistings_aspx">
+    <filedeps>
+        <filedep name="/BlogListings.aspx" />
+        <filedep name="/SmilesSenceMaster.Master" />
+    </filedeps>
+</preserve>

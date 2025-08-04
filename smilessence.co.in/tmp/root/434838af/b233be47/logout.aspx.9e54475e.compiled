@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SmilessenceAdmin/Logout.aspx" hash="fffffff58282e8ca" filehash="1eae1752e0ad" flags="110000" assembly="App_Web_zk3djdd0" type="ASP.smilessenceadmin_logout_aspx">
+    <filedeps>
+        <filedep name="/SmilessenceAdmin/Logout.aspx" />
+    </filedeps>
+</preserve>
