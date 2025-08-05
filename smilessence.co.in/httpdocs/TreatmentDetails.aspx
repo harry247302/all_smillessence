@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SmilesSenceMaster.Master" AutoEventWireup="true" CodeBehind="TreatmentDetails.aspx.cs" Inherits="SmilessenceWeb.TreatmentDetails" %>
+﻿﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SmilesSenceMaster.Master" AutoEventWireup="true" CodeBehind="TreatmentDetails.aspx.cs" Inherits="SmilessenceWeb.TreatmentDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class="header-space"></div>
 <div class="InnerBanner detailbanner">
